@@ -7,7 +7,7 @@ int main()
 	bool endPro = true; //End Program for loop
 	do
 	{
-		Scr.setFullScreen();
+		Scr.resizeConsole(1500, 1500);
 		//Sleep(500);
 		system("cls");
 		Menu Menu;
