@@ -23,7 +23,7 @@ string Menu::SelectTypeInput()
 			gotoxy(80, y); cout << ">>";
 			gotoxy(96, y); cout << "<<";
 			char c = getch();
-			if ((c == 'S') && (y < 22))
+			if ((c == 's') && (y < 22))
 			{
 				gotoxy(80, y); cout << "  ";
 				gotoxy(96, y); cout << "  ";
@@ -32,7 +32,7 @@ string Menu::SelectTypeInput()
 				gotoxy(80, y); cout << ">>";
 				gotoxy(96, y); cout << "<<";
 			}
-			if ((c == 'W') && (y > 21))
+			if ((c == 'w') && (y > 21))
 			{
 				gotoxy(80, y); cout << "  ";
 				gotoxy(96, y); cout << "  ";
@@ -88,7 +88,7 @@ void Menu::CreateMenu_Keyboard()
 	}
 	textcolor(7);
 	gotoxy(120, 7); cout << "MENU";
-	gotoxy(108, 8); cout << "A S to move and Space to select";
+	gotoxy(108, 8); cout << "W S to move and Space to select";
 	gotoxy(115, 9); cout << "    B  : Back";
 	gotoxy(115, 10); cout << "Press ESC  : EXIT";
 }
@@ -114,7 +114,7 @@ string Menu::Menu_Keyboard_SelectCalculatorType()
 			gotoxy(111, y); cout << ">>";
 			gotoxy(133, y); cout << "<<";
 			char c = getch();
-			if ((c == 'S') && (y < 14))
+			if ((c == 's') && (y < 14))
 			{
 				gotoxy(111, y); cout << "  ";
 				gotoxy(133, y); cout << "  ";
@@ -123,7 +123,7 @@ string Menu::Menu_Keyboard_SelectCalculatorType()
 				gotoxy(111, y); cout << ">>";
 				gotoxy(133, y); cout << "<<";
 			}
-			if ((c == 'W') && (y > 13))
+			if ((c == 'w') && (y > 13))
 			{
 				gotoxy(111, y); cout << "  ";
 				gotoxy(133, y); cout << "  ";
@@ -167,7 +167,7 @@ bool Menu::LoopPro()
 			char c = getch();
 			switch (c)
 			{
-			case 'B':
+			case 'b':
 				return true; //Continue with input type choosed
 			case 27:
 				return false; //Exit
